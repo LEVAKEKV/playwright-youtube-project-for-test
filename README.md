@@ -3,7 +3,7 @@
 **This is a Python script for search query on Youtube, get sixth video, like it and subscribe to owner channel.**
 
 **Installation**:
-  1. Open CMD
+  1. Open `CMD`
   2. Write command
    `pip install -r requirements.txt`
 
