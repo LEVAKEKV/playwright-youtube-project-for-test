@@ -3,7 +3,8 @@ from core.cookies_json_functions import LoadJson, ChangeSameSiteInCookie
 from core.playwright_functions import PlaywrightFunctions
 
 
-def load_cookies():
+def load_cookies() -> list[dict]:
+	"""Загружаем куки для работы"""
 	load_json = LoadJson("cookies.json")
 	cookies_list = load_json.load_json()
 	change_same_site = ChangeSameSiteInCookie(cookies_list)
@@ -11,7 +12,7 @@ def load_cookies():
 	return cookies_list
 
 
-def run_playwright_functions():
+def run_playwright_functions() -> None:
 	with sync_playwright() as pw:
 		pw_functions = PlaywrightFunctions(pw)
 		pw_functions.search_query("Иван золо", load_cookies())
