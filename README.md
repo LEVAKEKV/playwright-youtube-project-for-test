@@ -1,6 +1,7 @@
 # playwright-youtube-project-for-test
 
-**This is a Python script for search query on Youtube, get sixth video, like it and subscribe to owner channel.\n**
+**This is a Python script for search query on Youtube, get sixth video, like it and subscribe to owner channel.**
+
 **Installation**:
   1. Open CMD
   2. Write command
